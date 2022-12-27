@@ -9,7 +9,7 @@ export default function Register() {
     <div>
       <title>Registration</title>
       <RegisterForm />
-      {error && <h1>aaaaaaaaaaaaaaaaaaaaadasdasda</h1>}
+      {error && <h1>Error</h1>}
     </div>
   );
 }

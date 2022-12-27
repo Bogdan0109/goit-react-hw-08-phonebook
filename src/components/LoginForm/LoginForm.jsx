@@ -54,7 +54,9 @@ export const LoginForm = () => {
           Log In
         </Button>
       </ThemeProvider> */}
-      <button type="submit">Log In</button>
+      <button className="Form__btn" type="submit">
+        Log In
+      </button>
     </form>
   );
 };

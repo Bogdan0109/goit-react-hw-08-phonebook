@@ -26,7 +26,7 @@ export const RegisterForm = () => {
       <label className={css.label}>
         Username
         <input
-          className="form__input"
+          className="Form__input"
           type="text"
           name="name"
           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -66,7 +66,9 @@ export const RegisterForm = () => {
           Register
         </Button>
       </ThemeProvider> */}
-      <button type="submit">Register</button>
+      <button className="Form__btn" type="submit">
+        Register
+      </button>
     </form>
   );
 };
