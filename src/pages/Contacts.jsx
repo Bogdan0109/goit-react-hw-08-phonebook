@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
-import { selectLoading } from 'redux/contacts/selectors';
 import { Wrapper } from 'components/App.styled';
 import { Section } from 'components/Section/Section';
 import { ContactForm } from 'components/ContactForm/ContactForm';
@@ -11,7 +10,6 @@ import { fetchContacts } from 'redux/contacts/operations';
 
 export default function Contacts() {
   const dispatch = useDispatch();
-  const isLoading = useSelector(selectLoading);
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
