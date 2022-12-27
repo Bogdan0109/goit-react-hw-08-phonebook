@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.username {
+  font-weight: 700;
+}
+
+.btn-exit {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+
+  transition: color 200ms;
+
+  &:hover,
+  &:focus {
+    color: red;
+  }
+}
