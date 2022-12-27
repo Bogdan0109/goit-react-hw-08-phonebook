@@ -1,5 +1,5 @@
 import { useAuth } from 'hooks';
-import css from './Navigation.module.css';
+import './Navigation.scss';
 import Link from 'components/Link/Link';
 
 export const Navigation = () => {
@@ -7,11 +7,11 @@ export const Navigation = () => {
 
   return (
     <nav>
-      <Link className={css.link} to="/">
+      <Link className="link" to="/" end>
         Home
       </Link>
       {isLoggedIn && (
-        <Link className={css.link} to="/contacts">
+        <Link className="link" to="/contacts">
           Contacts
         </Link>
       )}

@@ -1,13 +1,13 @@
 import Link from 'components/Link/Link';
-import css from './AuthNav.module.css';
+import './AuthNav.scss';
 
 export const AuthNav = () => {
   return (
     <div>
-      <Link className={css.link} to="/register">
+      <Link className="link" to="/register">
         Register
       </Link>
-      <Link className={css.link} to="/login">
+      <Link className="link" to="/login">
         Log In
       </Link>
     </div>
